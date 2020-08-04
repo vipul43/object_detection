@@ -42,5 +42,4 @@ while True:
     if(key==81 or key==113):
         break
 
-tesla_dashcam.release()
 motorcycle_dashcam.release()
