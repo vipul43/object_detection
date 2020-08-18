@@ -9,7 +9,7 @@ while True:
     if(read_successful):
         gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         eyes = eye_classifier.detectMultiScale(gray_frame)
-        #drawing rectangles around cars
+        #drawing rectangles around eyes
         for (x, y, w, h) in eyes:
             cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
     else:
